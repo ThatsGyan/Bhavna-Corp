@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Hello TO  BOOTSTRAP WEB Div</h1>
+        <p class="lead">bootstrap is live language</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container..</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="https://getbootstrap.com/docs/4.0/components/buttons/" role="button">Learn more</a>
+        </p>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://www.tutorialrepublic.com/lib/images/bootstrap-5.0-illustration.png" alt="Products">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Welcome to bootstrap tutorials , here we learn the basic of bootstrap and its significance.</p>
+
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjJ4B-5oxmGQoWUjsnGBn5ei3RJfMm75kdZ7clqVdWvcT2FJT3sWdWGh7jkN2av9ZqfmM&usqp=CAU" alt="Products">
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Welcome to bootstrap tutorials , here we learn the basic of bootstrap and its significance.</p>
+
+        </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-social.png" width="900" alt="Products" />
+        <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Welcome to bootstrap tutorials , here we learn the basic of bootstrap and its significance.</p>
+
+        </div>
+    </div>
+            <h2>Click the button to get your coordinates.</h2>
+
+            <button onclick="getLocation()">Try It</button>
+
+            <p id="demo"></p>
+
+            <script>
+                var x = document.getElementById("demo");
+
+                function getLocation() {
+                    if (navigator.geolocation) {
+                        navigator.geolocation.getCurrentPosition(showPosition);
+                    } else {
+                        x.innerHTML = "Geolocation is not supported by this browser.";
+                    }
+                }
+
+                function showPosition(position) {
+                    x.innerHTML = "Latitude: " + position.coords.latitude +
+                        "<br>Longitude: " + position.coords.longitude;
+                }
+            </script>
+
+</body>
+</html>
